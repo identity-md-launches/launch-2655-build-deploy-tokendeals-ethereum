@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "TokenDeals",
+      "constructorArgs": []
+    }
+  ],
+  "notes": "Deploy TokenDeals on Ethereum with its nonpayable, zero-argument constructor. The accepted implementation fixes the owner at 0x6c4c78f2c3bdf4c4318fe305fb1c8bc1694d19b5 and the permanent NIGHTSHIFT FeeSplitter at 0x1119d5df2f046bc2d3c0f6279ef2e9ce49422d44. Deployment enables ETH, USDC, USDT, IMD and SHIFT with per-buy total caps of 1 ETH, 2500 USDC, 2500 USDT, 500 IMD and 40000000 SHIFT, stored in payment base units. Initial fees are 100 bps normally and 50 bps with a valid holder pass, subject to the 200 bps maximum. Holder passes remain disabled until the fixed owner configures passSigner using setPassSigner; no signer is supplied at deployment. The factory receives no administrative authority. No deployment funding, initialization calls or additional contracts are required."
+}
